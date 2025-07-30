@@ -64,6 +64,7 @@ A **real-time interactive 3D visualization** of cryptocurrency orderbooks, showc
 
 ### Steps
 
+```bash
 git clone https://github.com/Ashwath-saxena/Orderbook_3D_Visualizer.git
 cd Orderbook_3D_Visualizer
 npm install
@@ -73,7 +74,7 @@ npm run dev
 
 _No environment variables required for this demo; all exchange APIs are accessed via Next.js back-end proxies._
 
----
+```
 
 ## Architecture & Code Structure
 
@@ -92,6 +93,7 @@ src/
 │   ├── types/            # All TypeScript data models
 ├── stores/               # Zustand state
 └── styles/               # Tailwind config & custom global styles
+
 
 
 - Exchange data is always proxied server-side to avoid CORS and for easy scaling.

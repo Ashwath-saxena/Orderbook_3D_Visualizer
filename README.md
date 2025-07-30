@@ -64,8 +64,8 @@ A **real-time interactive 3D visualization** of cryptocurrency orderbooks, showc
 
 ### Steps
 
-git clone https://github.com/yourusername/orderbook-depth-3d-visualizer.git
-cd orderbook-depth-3d-visualizer
+git clone https://github.com/Ashwath-saxena/Orderbook_3D_Visualizer.git
+cd Orderbook_3D_Visualizer
 npm install
 npm run dev
 
@@ -78,19 +78,21 @@ _No environment variables required for this demo; all exchange APIs are accessed
 ## Architecture & Code Structure
 
 src/
-├── app/ # Next.js app directory (entry, API routes)
-│ └── api/ # Backend proxy routes for exchanges (REST + WS)
+├── app/                  # Next.js entry and server API routes
+│   ├── api/              # Proxy endpoints for exchanges (REST & WS)
+│   └── page.tsx
 ├── components/
-│ ├── 3d/ # All 3D visualization logic: mesh, flow, pressure zone, volume plots
-│ ├── controls/ # Desktop control panel and filter/search UI
-│ ├── mobile/ # Dedicated mobile UI/controls
-│ └── ui/ # Shared UI elements (loading, error boundary, etc)
+│   ├── 3d/               # Core 3D scene, animations, mesh layers
+│   ├── controls/         # Cross-platform control panels
+│   ├── mobile/           # Mobile-specific UI overlays & controls
+│   ├── ui/               # Shared UI: loading, error, boundaries
 ├── lib/
-│ ├── api/ # Exchange REST/WS client logic
-│ └── utils/ # Business logic (pressure zone analysis, value formatting)
-│ └── types/ # All TypeScript model types
-├── stores/ # Zustand global state (orderbook, UI, themes)
-└── styles/ # Tailwind/global styles
+│   ├── api/              # Exchange API clients & fetch utilities
+│   ├── utils/            # Domain/business logic (pressure zone algos)
+│   ├── types/            # All TypeScript data models
+├── stores/               # Zustand state
+└── styles/               # Tailwind config & custom global styles
+
 
 - Exchange data is always proxied server-side to avoid CORS and for easy scaling.
 - 3D scene is declaratively described with react-three-fiber for best reactivity and composability.
@@ -149,15 +151,15 @@ _All API traffic is routed through backend Next.js API endpoints for reliability
 
 ## Demo Video
 
-[Insert your Loom, YouTube, or Google Drive link here]
+[[Insert your Loom, YouTube, or Google Drive link here]](https://drive.google.com/file/d/14IfseyM7oHgmkdGEKcV2MnoUWqqepEQV/view?usp=sharing)
 
 ---
 
 ## Contact
 
-- **Developer:** Your Name
-- **Email:** your.email@example.com
-- **GitHub:** https://github.com/yourusername/orderbook-depth-3d-visualizer
+- **Developer:** Ashwath Saxena
+- **Email:** work.ashwathsaxena.as@gmail.com
+- **GitHub:** [https://github.com/yourusername/orderbook-depth-3d-visualizer](https://github.com/Ashwath-saxena/Orderbook_3D_Visualizer.git)
 
 ---
 

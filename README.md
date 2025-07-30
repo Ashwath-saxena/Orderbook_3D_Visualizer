@@ -77,7 +77,7 @@ _No environment variables required for this demo; all exchange APIs are accessed
 ```
 
 ## Architecture & Code Structure
-
+```
 src/
 ├── app/                  # Next.js entry and server API routes
 │   ├── api/              # Proxy endpoints for exchanges (REST & WS)
@@ -93,7 +93,7 @@ src/
 │   ├── types/            # All TypeScript data models
 ├── stores/               # Zustand state
 └── styles/               # Tailwind config & custom global styles
-
+```
 
 
 - Exchange data is always proxied server-side to avoid CORS and for easy scaling.

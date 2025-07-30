@@ -151,7 +151,7 @@ _All API traffic is routed through backend Next.js API endpoints for reliability
 
 ## Demo Video
 
-[[Insert your Loom, YouTube, or Google Drive link here]](https://drive.google.com/file/d/14IfseyM7oHgmkdGEKcV2MnoUWqqepEQV/view?usp=sharing)
+[[Google Drive link]](https://drive.google.com/file/d/14IfseyM7oHgmkdGEKcV2MnoUWqqepEQV/view?usp=sharing)
 
 ---
 
